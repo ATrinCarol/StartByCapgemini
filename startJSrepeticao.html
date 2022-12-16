@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de repetição</title>
+    <script>
+        //WHILE (FAÇA) - testa primeiro pra executar depois
+        var contador = 1;
+        while(contador <= 3){
+            alert("O contador está valendo: " + contador)
+            contador++
+        }
+
+        //DO WHILE (FAÇA ENQUANTO) - executa uma primeira vez e depois testa pra continuar ou não a execução
+        var count = 1;
+        do {
+            alert("O count vale: " + count)
+            count++
+        } while (count <= 3)
+
+        //FOR (PARA) - diferente dos anteriores, seu uso é recomendado quando sabemos o número exato de repetições
+        //o FOR tem uma estrutura baseada em três pontos para funcionar: uma variável de controle com o número que vai começar,
+        // um número máximo até onde vai a variável de controle (no caso abaixo "indice") e o seu incremento
+        var tabuadaDo5 = 5, resultado;
+        for(var indice = 1; indice <= 10; indice++){
+            resultado = (tabuadaDo5 * indice)
+            alert("Tabuada do 5: " + indice + " x " + tabuadaDo5 + " = " + resultado)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
