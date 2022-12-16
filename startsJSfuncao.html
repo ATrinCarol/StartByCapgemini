@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+        //Contagem de caracteres, incluindo o espaço
+        var texto = "Oi, quantos caracteres será que tem aqui, hein? 53 né";
+        alert(texto.length)
+
+        //Ordenar em letras maiúsculas
+        var palavra = "dEsorDenAdAs"
+        alert(palavra.toUpperCase());
+        //Ordenar em letras minúsculas
+        alert(palavra.toLowerCase());
+
+        //Localizar elementos. Exemplo: letra e
+        var nome = "Marcelo Niess";
+        //Retornando a primeira letra "e" que encontrar
+        alert(nome.indexOf("e"));
+        //Retornando a última letra "e" que encontrar
+        alert(nome.lastIndexOf("e"));
+
+        //Extraindo elementos
+        var termo = "Aprendendo JavaScript";
+        alert(termo.slice(10)); //ignora os 10 primeiros caracteres
+
+        alert(termo.slice(10, 15)); //ignorando os 10 primeiros e a partir do 15 em diante
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
