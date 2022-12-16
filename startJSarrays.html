@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Arrays (Vetores)</title>
+    <script>
+        /*O Array (ou vetor) é como se fosse um banco de dados temporário onde você pode manipulá-lo enquanto não fecha
+        sua página. É identificado pelos colchetes.*/
+        var nomeCursos = ["Backend ", "Frontend ", "Fullstack "];
+        alert(nomeCursos);
+        alert (nomeCursos[0]);
+
+        //Vetor de objetos
+        var informacoesCursos = [
+        {nome:"HTML", cargaHoraria:20, ativo: true},
+        {nome:"CSS", cargaHoraria:30, ativo: false},
+        {nome:"JavaScript", cargaHoraria:50, ativo: true}
+        ]
+
+        alert(informacoesCursos[0].nome + " " + informacoesCursos[1].nome + " " + informacoesCursos[2].nome + " " +
+        informacoesCursos[0].cargaHoraria)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
