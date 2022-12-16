@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendendo JS</title>
-    <!--O JS tem que ficar dentro do head que são as "configurações" da página html-->
+    <title>Aprendendo JS (condicional)</title>
     <script>
-        
+        var nome = 'Caroline';
+        var idade = 27;
+        var estuda = true;
+
+        if(!estuda && idade > 25){ //o exclamação antes da variável inverte o valor dela, então se é uma variável 'true', vai virar 'false' e vice-versa
+            alert("O conhecimento ninguém pode te tirar. Não é tarde demais")
+        }
+        else if (estuda && idade > 25){
+            alert ("Você vai longe!")
+
+        }
+        else {
+            alert("Isso mesmo! Continue sempre assim!")
+        }
     </script>
 </head>
 <body>
