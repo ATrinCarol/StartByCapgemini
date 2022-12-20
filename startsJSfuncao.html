@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções</title>
     <script>
+        /*
         //Contagem de caracteres, incluindo o espaço
         var texto = "Oi, quantos caracteres será que tem aqui, hein? 53 né";
         alert(texto.length)
@@ -28,6 +29,39 @@
         alert(termo.slice(10)); //ignora os 10 primeiros caracteres
 
         alert(termo.slice(10, 15)); //ignorando os 10 primeiros e a partir do 15 em diante
+
+        //Arredondar valores com a biblioteca Math - funções matemáticas
+        var nota = 7.49;
+        alert(Math.round(nota));
+
+        //Obtendo valores: Mínimo e Máximo 
+        alert(Math.min(10, -5, 0, 100, 50, 2));
+        alert(Math.max(102, 84, 6, 5, 4, 7, 563));
+*/  
+
+        /*Exibindo número aleatório - random
+        Sempre cria números de 0 a 1. Caso queira um intervalo
+        específico de números, precisamos fazer uma multiplicação.
+        Por exemplo: números aleatórios de 0 a 10. Então multiplica por 10.
+        E caso não queira que apareça as casas decimais, é possível
+        guardar o código da geração de números aleatórios em uma variável
+        E quando colocar para ser exibido, implementamos a função de arredondas
+        (round) nela:*/
+       /* var numRandom = Math.random() * 10;
+        alert(Math.round(numRandom));*/
+
+        //Criando novas funções - Somar dois valores
+        function somarDoisNumeros(numero1, numero2){
+            return numero1 + numero2;
+        }
+        alert(somarDoisNumeros(5, 5));
+
+
+
+    
+        
+
+
     </script>
 </head>
 <body>
