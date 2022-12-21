@@ -57,29 +57,39 @@
         }
 
     </script>
+    <style>
+        h3 {
+            color: #2312bb;
+            font-size: x-large;
+        }
+    </style>
 </head>
 <body>
+    <h3>Seleção por tag</h3>
     <button onClick="acao()">Selecionar Capgemini</button>
     <button onClick="acao1()">Selecionar Start</button>
     <button onClick="acao2()">Selecionar Java</button>
     <h1>Capgemini</h1>
     <h1>Programa Start</h1>
     <h1>Trilha Java</h1>
-    <br><br>
     <p><a onClick="acao3()" href="http://capgeminischool.brazilsouth.cloudapp.azure.com/course/view.php?id=26">Link de acesso</a></p>
-    <br><br>
+    <br>
+    <h3>Seleção por classe</h3>
     <button onclick="exibirTextoClasse()">Clique aqui</button>
     <h1 class="textoClasse">Título em H1</h1>
     <h2 class="textoClasse">Título em H2</h2>
     <p class="textoClasse">Parágrafo</p>
-    <br><br>
+    <br>
+    <h3>Seleção por id</h3>
     <input type="text" id="campo">
     <button onclick="exibirTextoId()">Clique aqui</button>
     <br><br> 
+    <h3>Manipulando o CSS</h3>
     <h1 id="css">JavaScript</h1>
     <button onclick="acaoCSS()">Clique aqui para mudar o texto</button>
     <button onclick="acaoCSS1()">Clique aqui para reverter o texto</button>
     <br><br>
+    <h3>Manipulando um atributo</h3>
     <a id="atributo" href="https://github.com/ATrinCarol/">Meu GitHub</a>
     <button onclick="alterarLink()">Alterar link</button>
 </body>
