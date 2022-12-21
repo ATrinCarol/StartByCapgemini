@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script>
+        //Criando a função onclick: "mensagem"
+        function aoClicar(){
+            alert("Você clicou no botão");
+        }
+        //Criando a função de alteração: "onchange"
+        function alterando(){
+            var cursos = document.getElementById("cursos").value;
+            alert("Você escolheu: " + cursos);
+        }
+        //Criando a função de carregamento:
+        function carregar(){
+            alert("Boas vindas ao site!");
+        }
+        //Criando a função de evento de teclado (c/ onkeyup):
+        function exibirTexto(){
+            var campo = document.getElementById("campo").value;
+            alert(campo);
+        }
+        //Criando a função de evento de teclado (c/ onkeydown):
+        function exibirTexto1(){
+            var campo1 = document.getElementById("campo1").value;
+            alert(campo1);
+        }
+         //Criando a função de evento de teclado (c/ onkeypress):
+         function exibirTexto2(){
+            var campo2 = document.getElementById("campo2").value;
+            alert(campo2);
+        }
+
+    </script>
+</head>
+<body onload="carregar()">
+<!--Evento de clique-->
+    <button onclick="aoClicar()">
+        Clique aqui
+    </button>
+<!--Evento de alteração-->
+    <select id="cursos" onchange="alterando()">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+<!--Evento de carregamento: conferir acima na tag body-->
+
+<!--Evento de teclado - onkeyup-->
+<br><br>
+<p>Exemplo de OnKeyUp</p>
+<input type="text" id="campo" onkeyup="exibirTexto()">
+<br><br>
+<!--Evento de teclado - onkeydown-->
+<p>Exemplo de OnKeyDown</p>
+<input type="text" id="campo1" onkeydown="exibirTexto1()">
+<br><br>
+<!--Evento de teclado - onkeypress-->
+<p>Exemplo de OnKeyPress</p>
+<input type="text" id="campo2" onkeypress="exibirTexto2()">
+</body>
+</html>
