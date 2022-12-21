@@ -23,6 +23,39 @@
         var texto3 = document.getElementsByTagName("a")[0];
         alert("Você será redirecionado(a) ao seu "+texto3.innerHTML);
         }
+        //Selecionando através de classe
+        function exibirTextoClasse(){
+            var textoClasse = document.getElementsByClassName("textoClasse")[2];
+            alert(textoClasse.innerHTML);
+        }
+        //Selecionando através do ID
+        function exibirTextoId(){
+            var textoId = document.getElementById("campo");
+            alert(textoId.value);
+       //Apagando um conteúdo
+        campo.value = ""; //o "" significa campo vazio
+        }
+        //Manipulando o CSS
+        function acaoCSS(){
+            var textoCSS = document.getElementById("css");
+            textoCSS.style.color = "#FF0000";
+            textoCSS.style.fontSize = "20px";
+            //Alterando o conteúdo
+            textoCSS.innerHTML = "Curso de JavaScript";
+        }
+        function acaoCSS1(){
+            var textoCSS1 = document.getElementById("css");
+            textoCSS1.style.color = "#000000";
+            textoCSS1.style.fontSize = "30px";
+            textoCSS1.innerHTML = "JavaScript";
+        }
+        //Manipulando atributos
+        function alterarLink(){
+            var link = document.getElementById("atributo");
+            link.innerHTML = "Meu LinkedIn"
+            link.href = "https://www.linkedin.com/in/atrindadecarol/"
+        }
+
     </script>
 </head>
 <body>
@@ -34,5 +67,20 @@
     <h1>Trilha Java</h1>
     <br><br>
     <p><a onClick="acao3()" href="http://capgeminischool.brazilsouth.cloudapp.azure.com/course/view.php?id=26">Link de acesso</a></p>
+    <br><br>
+    <button onclick="exibirTextoClasse()">Clique aqui</button>
+    <h1 class="textoClasse">Título em H1</h1>
+    <h2 class="textoClasse">Título em H2</h2>
+    <p class="textoClasse">Parágrafo</p>
+    <br><br>
+    <input type="text" id="campo">
+    <button onclick="exibirTextoId()">Clique aqui</button>
+    <br><br> 
+    <h1 id="css">JavaScript</h1>
+    <button onclick="acaoCSS()">Clique aqui para mudar o texto</button>
+    <button onclick="acaoCSS1()">Clique aqui para reverter o texto</button>
+    <br><br>
+    <a id="atributo" href="https://github.com/ATrinCarol/">Meu GitHub</a>
+    <button onclick="alterarLink()">Alterar link</button>
 </body>
 </html>
