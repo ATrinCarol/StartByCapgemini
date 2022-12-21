@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de conteúdo</title>
+    <script>
+        //selecionando através de tag
+        function acao(){
+        var texto = document.getElementsByTagName("h1")[0];
+        alert("Você selecionou "+texto.innerHTML);
+        }
+        function acao1(){
+        var texto1 = document.getElementsByTagName("h1")[1];
+        alert("Você selecionou "+texto1.innerHTML);
+        }
+        function acao2(){
+        var texto2 = document.getElementsByTagName("h1")[2];
+        alert("Você selecionou "+texto2.innerHTML);
+        }
+        function acao3(){
+        var texto3 = document.getElementsByTagName("a")[0];
+        alert("Você será redirecionado(a) ao seu "+texto3.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <button onClick="acao()">Selecionar Capgemini</button>
+    <button onClick="acao1()">Selecionar Start</button>
+    <button onClick="acao2()">Selecionar Java</button>
+    <h1>Capgemini</h1>
+    <h1>Programa Start</h1>
+    <h1>Trilha Java</h1>
+    <br><br>
+    <p><a onClick="acao3()" href="http://capgeminischool.brazilsouth.cloudapp.azure.com/course/view.php?id=26">Link de acesso</a></p>
+</body>
+</html>
