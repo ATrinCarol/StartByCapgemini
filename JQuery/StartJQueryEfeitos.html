@@ -11,11 +11,22 @@
     crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            
+            //Exibir
+            $("#exibir").click(function(){
+                $("img").show();
+            });
+
+            //Ocultar
+            $("#ocultar").click(function(){
+                $("img").hide();
+            });
         });
     </script>
 </head>
 <body>
-    
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br><br>
+    <img src="https://i.imgur.com/bYqi323.png">
 </body>
 </html>
