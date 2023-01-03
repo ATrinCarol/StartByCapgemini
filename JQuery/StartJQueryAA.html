@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando atributos</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").attr("width","400");
+            $("img").attr("title","Alterei o title com o attr");
+        });
+    </script>
+</head>
+<body>
+    <img src="CurrículoJPEG.JPG" title="Vamos conversar? Me contate!">
+</body>
+</html>

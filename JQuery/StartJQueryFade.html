@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos - Fade</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            //iniciar a página com h1 ocultado
+            $("h1").css("display","none");
+            //exibindo h1
+            $("#exibir").click(function(){
+                $("h1").fadeIn(8000);
+            });
+            //ocultando h1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut(4000);
+            });
+            /*TEMPO. Existem 3 maneiras.
+            1. Default (padrão): 0,4segundos
+            2. Slow: 0,6s
+            3. Valor de tempo em milisegundos. 
+            Exemplo: 3000 = 3 segundos*/
+        });
+    </script>
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+    <h1>Aprendendo JQuery</h1>
+</body>
+</html>
