@@ -5,16 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeiroComponenteComponent } from './primeiro-componente/primeiro-componente.component';
 import { SegundoComponenteComponent } from './segundo-componente/segundo-componente.component';
+import { MultiplicaPorPipe } from './multiplica-por.pipe';
+import { PipeCustomizadoComponent } from './pipe-customizado/pipe-customizado.component';
+import { TwoWayBidingComponent } from './two-way-biding/two-way-biding.component';
+import { FormsModule } from '@angular/forms';
+import { RenderizandoListasComponent } from './renderizando-listas/renderizando-listas.component';
+import { ComponentePersonalizadoComponent } from './componente-personalizado/componente-personalizado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimeiroComponenteComponent,
-    SegundoComponenteComponent
+    SegundoComponenteComponent,
+    MultiplicaPorPipe,
+    PipeCustomizadoComponent,
+    TwoWayBidingComponent,
+    RenderizandoListasComponent,
+    ComponentePersonalizadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

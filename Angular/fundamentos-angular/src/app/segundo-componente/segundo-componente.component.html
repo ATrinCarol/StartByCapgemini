@@ -1,2 +1,6 @@
 <h2>Segundo componente</h2>
 <p>Demonstrando uma interpolação, o nome é: {{ nome | uppercase }}</p>
+<p>E a data de nascimento: {{ dataNascimento | date: "dd/MM/yyyy" }}</p>
+<img [src]="urlImagem" width="300px">
+<br>
+<button (click)="mostrarContato()" type="button">Mostrar número do WhatsApp</button>

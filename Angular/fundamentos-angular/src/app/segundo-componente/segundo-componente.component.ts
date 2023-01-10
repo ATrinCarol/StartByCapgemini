@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class SegundoComponenteComponent {
   nome = 'Caroline';
+  dataNascimento = "1995-05-28";
+  contatoTelefone = "(11)95958-0959"
+  urlImagem = "/assets/20221004_200816.jpg";
+
+  mostrarContato(){
+    alert(`O contato via WhatsApp é: ${this.contatoTelefone}`)
+  }
 }
