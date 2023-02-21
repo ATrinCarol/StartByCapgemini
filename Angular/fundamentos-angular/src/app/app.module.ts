@@ -13,6 +13,10 @@ import { RenderizandoListasComponent } from './renderizando-listas/renderizando-
 import { ComponentePersonalizadoComponent } from './componente-personalizado/componente-personalizado.component';
 import { ComponentePaiComponent } from './componente-pai/componente-pai.component';
 import { ComponenteFilhoComponent } from './componente-filho/componente-filho.component';
+import { Exemplo1ServicosComponent } from './exemplo1-servicos/exemplo1-servicos.component';
+import { Exemplo2ServicosComponent } from './exemplo2-servicos/exemplo2-servicos.component';
+import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
+import { CicloDeVidaPaiComponent } from './ciclo-de-vida-pai/ciclo-de-vida-pai.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { ComponenteFilhoComponent } from './componente-filho/componente-filho.co
     RenderizandoListasComponent,
     ComponentePersonalizadoComponent,
     ComponentePaiComponent,
-    ComponenteFilhoComponent
+    ComponenteFilhoComponent,
+    Exemplo1ServicosComponent,
+    Exemplo2ServicosComponent,
+    CicloDeVidaComponent,
+    CicloDeVidaPaiComponent
   ],
   imports: [
     BrowserModule,
